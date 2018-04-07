@@ -7,7 +7,7 @@ const express = require("express"),
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
-    res.send(randomBytes(6).toString("hex"));
+    res.send(randomBytes(12).toString("hex"));
 });
 
 router.post("/:channel", (req, res, next) => {
