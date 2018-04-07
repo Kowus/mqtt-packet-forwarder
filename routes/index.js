@@ -1,10 +1,9 @@
 const express = require("express"),
     router = express.Router(),
     { randomBytes } = require("crypto"),
-    { connect } = require("mqtt");
-
-import { mqtt as mqtt_url } from "../config/env";
-const client = connect(mqtt_url);
+    { connect } = require("mqtt"),
+    { mqtt } = require("../config/env"),
+    client = connect(mqtt.url);
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
