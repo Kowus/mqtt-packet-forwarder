@@ -1,5 +1,5 @@
 module.exports = {
-    mqtt: {
-        url: process.env.MQTT_URL
-    }
+  mqtt: {
+    url: process.env.MQTT_URL
+  }
 };
